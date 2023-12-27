@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2356230D2B3C6099004C4001 /* SongPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356230C2B3C6099004C4001 /* SongPlayerView.swift */; };
+		2356230F2B3C8810004C4001 /* SongPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356230E2B3C8810004C4001 /* SongPlayerViewModel.swift */; };
 		235EA6CF2ADC08530002DCFA /* swiftuimusicplayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235EA6CE2ADC08530002DCFA /* swiftuimusicplayerApp.swift */; };
 		235EA6D32ADC08550002DCFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235EA6D22ADC08550002DCFA /* Assets.xcassets */; };
 		235EA6D62ADC08550002DCFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235EA6D52ADC08550002DCFA /* Preview Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2356230C2B3C6099004C4001 /* SongPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayerView.swift; sourceTree = "<group>"; };
+		2356230E2B3C8810004C4001 /* SongPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayerViewModel.swift; sourceTree = "<group>"; };
 		235EA6CB2ADC08530002DCFA /* swiftuimusicplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftuimusicplayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		235EA6CE2ADC08530002DCFA /* swiftuimusicplayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftuimusicplayerApp.swift; sourceTree = "<group>"; };
 		235EA6D22ADC08550002DCFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				235EA6E92ADC186E0002DCFA /* SongsViewModel.swift */,
+				2356230E2B3C8810004C4001 /* SongPlayerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			children = (
 				235EA6EE2ADC19630002DCFA /* SongsView.swift */,
 				235EA6F32ADC336F0002DCFA /* PosterView.swift */,
+				2356230C2B3C6099004C4001 /* SongPlayerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,12 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2356230F2B3C8810004C4001 /* SongPlayerViewModel.swift in Sources */,
 				235EA6EF2ADC19630002DCFA /* SongsView.swift in Sources */,
 				235EA6E72ADC14160002DCFA /* Constants.swift in Sources */,
 				235EA6E42ADC12C00002DCFA /* SongsService.swift in Sources */,
 				235EA6E12ADC127F0002DCFA /* Song.swift in Sources */,
 				235EA6EA2ADC186E0002DCFA /* SongsViewModel.swift in Sources */,
 				235EA6CF2ADC08530002DCFA /* swiftuimusicplayerApp.swift in Sources */,
+				2356230D2B3C6099004C4001 /* SongPlayerView.swift in Sources */,
 				235EA6F22ADC26C00002DCFA /* ImageHelper.swift in Sources */,
 				235EA6F42ADC336F0002DCFA /* PosterView.swift in Sources */,
 			);

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 class SongsService {
     func getSongs(completion: @escaping ([Song]?) -> Void) {
@@ -26,5 +27,14 @@ class SongsService {
                 completion(nil)
             }
         }.resume()
+    }
+    
+    func getSongData() -> AnyPublisher<[Song], Never> {
+        return URLSession.shared.dataTaskPublisher(for: Constants.songsURL)
+            .map(\.data)
+            .decode(type: SongData.self, decoder: JSONDecoder())
+            .map(\.songs)
+            .replaceError(with: [])
+            .eraseToAnyPublisher()
     }
 }

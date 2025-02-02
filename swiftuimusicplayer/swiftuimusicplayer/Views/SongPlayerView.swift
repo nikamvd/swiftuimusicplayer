@@ -17,6 +17,7 @@ struct SongPlayerView: View {
             HStack(alignment: .center) {
                 Button(action: {}) {
                     Image(systemName: "backward.end.fill")
+                        .foregroundColor(.white)
                         .padding()
                 }
                 Spacer()
@@ -63,10 +64,12 @@ struct SongPlayerView: View {
             HStack {
                 Button(action: {}) {
                     Image(systemName: "repeat")
+                        .foregroundColor(.white)
                         .padding()
                 }
                 Button(action: {}) {
                     Image(systemName: "backward.end.fill")
+                        .foregroundColor(.white)
                         .padding()
                 }
                 Button(action: {
@@ -82,10 +85,12 @@ struct SongPlayerView: View {
                 }
                 Button(action: {}) {
                     Image(systemName: "forward.end.fill")
+                        .foregroundColor(.white)
                         .padding()
                 }
                 Button(action: {}) {
                     Image(systemName: "shuffle")
+                        .foregroundColor(.white)
                         .padding()
                 }
             }
